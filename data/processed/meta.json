@@ -1,0 +1,8 @@
+{
+  "vocab_size": 4096,
+  "train_tokens": 7422571,
+  "val_tokens": 134282,
+  "chat_repeat": 1.108,
+  "chat_share_actual": 0.1001,
+  "dtype": "uint16"
+}
