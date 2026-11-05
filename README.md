@@ -1,4 +1,4 @@
-🎮 GAMERS LLM
+🎮 GAMERS LLM \n
 ⚠️⚠️⚠️ Don't forget to Download the best checkpoint ⬇️ put it in /checkpoints/10m⚠️⚠️⚠️
 The Intersection of Artificial Intelligence, Language Modeling & Gaming.
 
