@@ -67,7 +67,7 @@ The recommended checkpoint is available through Google Drive.
 If you're setting up the project, download this checkpoint first.
 
 <p align="center">
-  <a href="https://drive.google.com/file/d/17eCBQaZb2l6gKu96WhQVY2zHGCnWkzvY/view?usp=drivesdk">
+  <a href="https://drive.google.com/file/d/1do-vXP1GT1NHavWaN5sFfdqsVBoPin3i/view?usp=drivesdk">
     <img src="https://img.shields.io/badge/⬇%20DOWNLOAD%20RECOMMENDED%20MODEL-GOOGLE%20DRIVE-4285F4?style=for-the-badge&logo=googledrive&logoColor=white" />
   </a>
 </p>Checkpoint installation
