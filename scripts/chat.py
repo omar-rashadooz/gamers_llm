@@ -6,9 +6,9 @@
 
 Inside the chat:  /help  shows the commands (/temp, /rep, /len, /mode text ...).
 
-Important: the model was trained on SINGLE question -> answer pairs
-("User: ...\nBot: ...<|endoftext|>"), so every message is answered on its own;
-it does not remember earlier messages.
+Memory: by default every message is answered on its own (the first models were trained
+on single question -> answer pairs). A model trained on the multi-turn chat data
+can use  --history 3  (or /history 3) to remember the last exchanges.
 """
 import argparse
 import math
@@ -150,6 +150,7 @@ def generate_reply(model, tok, prompt, s, use_cache):
     max_new = min(s["len"], cfg.block_size - len(ids))
     streamer, gen = Streamer(tok, STOPS), []
     cache = [None] * cfg.n_layer
+    pieces = []
     x, pos0, t0 = torch.tensor([ids], dtype=torch.long), 0, time.time()
     with torch.no_grad():
         for _ in range(max_new):
@@ -162,13 +163,18 @@ def generate_reply(model, tok, prompt, s, use_cache):
             if nxt == tok.eot_id:
                 break
             gen.append(nxt)
-            print(streamer.push(nxt), end="", flush=True)
+            piece = streamer.push(nxt)
+            pieces.append(piece)
+            print(piece, end="", flush=True)
             if streamer.done:
                 break
             x = torch.tensor([[nxt]], dtype=torch.long)
-    print(streamer.finish())
+    tail = streamer.finish()
+    pieces.append(tail)
+    print(tail)
     dt = max(time.time() - t0, 1e-6)
     print(f"  [{len(gen)} tokens, {len(gen) / dt:.1f} tok/s]")
+    return "".join(pieces)
 
 
 # ------------------------------------------------------------------------ setup
@@ -196,6 +202,9 @@ def main():
     ap.add_argument("--topp", type=float, default=0.95)
     ap.add_argument("--rep", type=float, default=1.15, help="repetition penalty (1 = off)")
     ap.add_argument("--len", type=int, default=150, help="max new tokens")
+    ap.add_argument("--history", type=int, default=0,
+                    help="remember the last N exchanges (0 = every message alone). "
+                         "Use 3 only with a model trained on multi-turn chat data")
     ap.add_argument("--no-cache", action="store_true")
     ap.add_argument("--threads", type=int, default=0)
     ap.add_argument("--seed", type=int, default=None)
@@ -238,11 +247,23 @@ def main():
     print(f"  generation: {'KV-cache (fast)' if use_cache else 'no cache (slow)'}")
 
     s = {"temp": a.temp, "topk": a.topk, "topp": a.topp, "rep": a.rep,
-         "rep_window": 64, "len": a.len}
+         "rep_window": 64, "len": a.len, "history": a.history}
 
     def build_prompt(text, mode):
         text = " ".join(text.split())                    # training data had single-line turns
         return f"User: {text}\nBot:" if mode == "chat" else text
+
+    history = []                                          # [(user_text, bot_text), ...]
+
+    def chat_prompt(text):
+        text = " ".join(text.split())
+        turns = history[-s["history"]:] if s["history"] > 0 else []
+        while True:                                       # drop the oldest exchange until it fits
+            head = "".join(f"User: {u}\nBot: {b}\n" for u, b in turns)
+            prompt = head + f"User: {text}\nBot:"
+            if not turns or len(tok.encode(prompt)) <= cfg.block_size - 64:
+                return prompt
+            turns = turns[1:]
 
     if a.prompt is not None:
         mode = "text" if a.raw else "chat"
@@ -260,10 +281,11 @@ def main():
         "           /topk N   /topp X   limit the choice of next words\n"
         "           /rep X    repetition penalty (1.0 = off, 1.15 default, 1.3 strong)\n"
         "           /len N    max reply length in tokens\n"
+        "           /history N   remember the last N exchanges (0 = off)    /clear  forget them\n"
         "           /settings /help /quit      (Ctrl+C stops a reply)")
     print("\nType a message. /help for commands, /quit to exit.\n")
     mode = "chat"
-    names = {"temp": float, "topk": int, "topp": float, "rep": float, "len": int}
+    names = {"temp": float, "topk": int, "topp": float, "rep": float, "len": int, "history": int}
     while True:
         try:
             line = input(f"You{' (text)' if mode == 'text' else ''}: ").strip()
@@ -279,6 +301,9 @@ def main():
                 break
             elif cmd == "help":
                 print(help_text)
+            elif cmd == "clear":
+                history.clear()
+                print("memory cleared")
             elif cmd == "settings":
                 print(f"mode={mode}  " + "  ".join(f"{k}={v}" for k, v in s.items()))
             elif cmd == "mode" and arg in ("chat", "text"):
@@ -293,10 +318,12 @@ def main():
             else:
                 print("unknown command, try /help")
             continue
-        prompt = build_prompt(line, mode)
+        prompt = chat_prompt(line) if mode == "chat" else build_prompt(line, mode)
         print("Bot:" if mode == "chat" else "...", end="", flush=True)
         try:
-            generate_reply(model, tok, prompt, s, use_cache)
+            reply = generate_reply(model, tok, prompt, s, use_cache)
+            if mode == "chat":
+                history.append((" ".join(line.split()), " ".join(reply.split())))
         except KeyboardInterrupt:
             print("\n  [stopped]")
 
