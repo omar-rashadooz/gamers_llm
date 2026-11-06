@@ -93,15 +93,7 @@ Step 4 — Place the checkpoint in the correct location
 
 Move the downloaded checkpoint into:
 
-checkpoints/10m/
-
-For example:
-
-gamers_llm/
-│
-└── checkpoints/
-    └── 10m/
-        └── <downloaded-checkpoint>
+checkpoints/10m/best.pt
 
 Preserve the original filename and any accompanying files.
 
@@ -123,21 +115,6 @@ GAMERS LLM explores the engineering concepts involved in building and experiment
 
 The language-model workflow
 
-flowchart TD
-    A["Raw Text Data"] --> B["Dataset Preparation"]
-    B --> C["Tokenization"]
-    C --> D["Model Architecture"]
-    D --> E["Training Process"]
-    E --> F["Learned Parameters"]
-    F --> G["Checkpoint Storage"]
-    G --> H["Model Loading"]
-    H --> I["Text Generation"]
-
-    style A fill:#312e81,color:#fff
-    style D fill:#4c1d95,color:#fff
-    style F fill:#5b21b6,color:#fff
-    style G fill:#1e40af,color:#fff
-    style I fill:#166534,color:#fff
 
 This illustrates a general language-model development pipeline rather than a claim that every stage is implemented identically in the current codebase.
 
@@ -239,24 +216,6 @@ Consult the relevant source files for supported arguments, model-loading require
 The checkpoint directory must follow the installation layout documented above.
 
 The following is a conceptual illustration, not a complete inventory of repository files:
-
-gamers_llm/
-│
-├── checkpoints/
-│   └── 10m/
-│       └── <downloaded-model-checkpoint>
-│
-├── data/
-│   └── <training-datasets>
-│
-├── models/
-│   └── <model-implementation>
-│
-├── train.py
-│
-├── requirements.txt
-│
-└── README.md
 
 Actual filenames and directories may differ according to the current implementation.
 
