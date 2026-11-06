@@ -1,76 +1,76 @@
-🎮 GAMERS LLM 
----
-⚠️⚠️⚠️ Don't forget to Download the best checkpoint ⬇️ put it in /checkpoints/10m⚠️⚠️⚠️
----
-The Intersection of Artificial Intelligence, Language Modeling & Gaming.
+🎮 GAMERS LLM
+
+An Independent Language Model Engineering Project
 
 <p align="center">
-  <img src="https://img.shields.io/badge/PROJECT-GAMERS%20LLM-8A2BE2?style=for-the-badge&logo=openai&logoColor=white" />
-  <img src="https://img.shields.io/badge/DOMAIN-ARTIFICIAL%20INTELLIGENCE-0A84FF?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/GAMERS-LLM-8A2BE2?style=for-the-badge&logo=openai&logoColor=white" />
+  <img src="https://img.shields.io/badge/ARTIFICIAL-INTELLIGENCE-0078D4?style=for-the-badge" />
   <img src="https://img.shields.io/badge/STATUS-EXPERIMENTAL-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/OPEN%20SOURCE-YES-success?style=for-the-badge&logo=github" />
 </p><p align="center">
-  <strong>An independent language-model engineering project.</strong>
-  <br/>
-  Exploring the foundations of training, model architecture, checkpoints, and intelligent text generation.
+  <strong>Building intelligence from the ground up.</strong>
+  <br />
+  Exploring neural language models, model training, checkpoint engineering, and gaming-oriented AI.
 </p><p align="center">
-  <a href="https://github.com/omar-rashadooz/gamers_llm">Repository</a> •
-  <a href="https://drive.google.com/file/d/17eCBQaZb2l6gKu96WhQVY2zHGCnWkzvY/view?usp=drivesdk">Download Model</a> •
-  <a href="#-installation">Installation</a> •
-  <a href="#-contributing">Contributing</a>
+  <a href="https://github.com/omar-rashadooz/gamers_llm">
+    <img src="https://img.shields.io/badge/Explore%20Repository-GitHub-181717?style=for-the-badge&logo=github" />
+  </a>
+  <a href="https://drive.google.com/file/d/17eCBQaZb2l6gKu96WhQVY2zHGCnWkzvY/view?usp=drivesdk">
+    <img src="https://img.shields.io/badge/Download-Recommended%20Checkpoint-4285F4?style=for-the-badge&logo=googledrive&logoColor=white" />
+  </a>
 </p>---
 
-01. ◈ INTRODUCTION
+⚡ 01. INTRODUCTION
 
-GAMERS LLM is an independent AI engineering project exploring the development and experimentation of language models.
+GAMERS LLM is an independent language-model engineering project dedicated to exploring the development, training, and experimentation of neural language models.
 
-The project focuses on the underlying components of modern language-model development:
+The project explores the engineering principles behind language-model development, including architecture design, parameter optimization, dataset preparation, model checkpoints, and text generation.
 
-- Neural language-model architectures.
-- Training pipelines and optimization.
-- Model parameters and checkpoint management.
-- Text processing and generation.
-- Experimental evaluation and iterative development.
+Rather than relying exclusively on black-box AI services, GAMERS LLM focuses on experimenting with the underlying technology that makes language models work.
 
-Rather than treating AI as a black-box service, this project provides a foundation for exploring the engineering behind language models.
+Our philosophy
 
-The objective is simple: understand the technology, build the model, and improve it through experimentation.
+«Don't just use artificial intelligence. Understand it. Build it. Train it. Improve it.»
+
+The project is an ongoing experimental initiative, with an emphasis on learning, engineering, reproducibility, and continuous improvement.
 
 ---
 
-02. ◈ THE VISION
+🧠 02. PROJECT VISION
 
 The long-term direction of GAMERS LLM is to explore specialized language models and their potential applications in gaming-related environments.
 
-The research direction includes:
+Our development interests include:
 
-Area| Focus
-Model Engineering| Architecture and parameter experimentation
-Training| Learning from prepared datasets
-Checkpoints| Model-state preservation and restoration
-Generation| Producing text from learned patterns
-Evaluation| Analyzing model behavior and performance
-Gaming AI| Exploring gaming-oriented language applications
+Research Area| Description
+Neural Architectures| Exploring language-model architecture and design
+Model Training| Developing and experimenting with training pipelines
+Dataset Engineering| Preparing structured data for model learning
+Parameter Optimization| Investigating model configurations and optimization
+Checkpoint Engineering| Saving, organizing, and restoring trained models
+Text Generation| Experimenting with language generation capabilities
+Gaming AI| Exploring specialized gaming-oriented applications
 
-These represent project directions rather than claims that every feature is currently implemented.
+These are project research directions; individual capabilities depend on the current implementation.
 
 ---
 
-03. ◈ RECOMMENDED MODEL CHECKPOINT
+🚀 03. GET THE RECOMMENDED MODEL CHECKPOINT
 
 <p align="center">
-  <img src="https://img.shields.io/badge/RECOMMENDED-CHECKPOINT-8A2BE2?style=for-the-badge&logo=googledrive&logoColor=white" />
-</p>🚀 Get the Recommended Pretrained Checkpoint
+  <img src="https://img.shields.io/badge/RECOMMENDED%20MODEL-CHECKPOINT-8A2BE2?style=for-the-badge" />
+</p>⭐ Start with the recommended checkpoint
 
-The recommended checkpoint is available through Google Drive.
+The recommended model checkpoint is available through Google Drive.
 
-If you're setting up the project, download this checkpoint first.
+New users: download this checkpoint before attempting to load the pretrained model.
 
 <p align="center">
-  <a href="https://drive.google.com/file/d/1do-vXP1GT1NHavWaN5sFfdqsVBoPin3i/view?usp=drivesdk">
-    <img src="https://img.shields.io/badge/⬇%20DOWNLOAD%20RECOMMENDED%20MODEL-GOOGLE%20DRIVE-4285F4?style=for-the-badge&logo=googledrive&logoColor=white" />
+  <a href="https://drive.google.com/file/d/17eCBQaZb2l6gKu96WhQVY2zHGCnWkzvY/view?usp=drivesdk">
+    <img src="https://img.shields.io/badge/⬇%20CLICK%20HERE%20TO%20DOWNLOAD%20THE%20MODEL-GOOGLE%20DRIVE-4285F4?style=for-the-badge&logo=googledrive&logoColor=white" />
   </a>
-</p>Checkpoint installation
+</p>📦 Checkpoint installation
+
+Follow these steps carefully.
 
 Step 1 — Clone the repository
 
@@ -83,127 +83,171 @@ mkdir -p checkpoints/10m
 
 Step 3 — Download the checkpoint
 
-"CLICK HERE TO DOWNLOAD THE MODEL FROM GOOGLE DRIVE" (https://drive.google.com/file/d/17eCBQaZb2l6gKu96WhQVY2zHGCnWkzvY/view?usp=drivesdk)
+Open the Google Drive link:
 
-Step 4 — Place the downloaded files
+"DOWNLOAD THE RECOMMENDED MODEL CHECKPOINT" (https://drive.google.com/file/d/17eCBQaZb2l6gKu96WhQVY2zHGCnWkzvY/view?usp=drivesdk)
 
-Move the downloaded checkpoint file or files into:
+Download the provided checkpoint file or files.
+
+Step 4 — Place the checkpoint in the correct location
+
+Move the downloaded checkpoint into:
 
 checkpoints/10m/
 
 For example:
 
 gamers_llm/
+│
 └── checkpoints/
     └── 10m/
-        └── checkpoint.pt
+        └── <downloaded-checkpoint>
 
-The filename above is illustrative. Keep the actual downloaded filename and any associated files intact.
+Preserve the original filename and any accompanying files.
 
-Step 5 — Verify installation
+Step 5 — Verify the installation
 
 ls -lah checkpoints/10m/
 
-<details>
-<summary><strong>⚠️ Important checkpoint information</strong></summary>- Make sure the download has completed successfully.
-- Preserve the original checkpoint format.
-- Do not rename checkpoint files unless the implementation requires it.
-- The checkpoint must be compatible with the model architecture.
-- Follow the loading procedure implemented in the source code.
+Your checkpoint should now be available in the expected directory.
 
-</details>---
+«IMPORTANT: The checkpoint must be compatible with the architecture and loading procedure implemented in GAMERS LLM. The directory name is part of the required installation instructions; it does not independently establish the model's parameter count.»
 
-04. ◈ GETTING STARTED
+---
+
+🏗️ 04. MODEL ENGINEERING
+
+A language model is a combination of multiple interconnected components.
+
+GAMERS LLM explores the engineering concepts involved in building and experimenting with these systems.
+
+The language-model workflow
+
+flowchart TD
+    A["Raw Text Data"] --> B["Dataset Preparation"]
+    B --> C["Tokenization"]
+    C --> D["Model Architecture"]
+    D --> E["Training Process"]
+    E --> F["Learned Parameters"]
+    F --> G["Checkpoint Storage"]
+    G --> H["Model Loading"]
+    H --> I["Text Generation"]
+
+    style A fill:#312e81,color:#fff
+    style D fill:#4c1d95,color:#fff
+    style F fill:#5b21b6,color:#fff
+    style G fill:#1e40af,color:#fff
+    style I fill:#166534,color:#fff
+
+This illustrates a general language-model development pipeline rather than a claim that every stage is implemented identically in the current codebase.
+
+Core components
+
+Component| Responsibility
+Dataset| Supplies training examples
+Tokenizer| Converts text into model inputs
+Architecture| Defines the model structure
+Parameters| Store learned numerical values
+Optimizer| Updates model parameters
+Checkpoint| Preserves model state
+Inference| Generates output from input
+
+---
+
+🔬 05. TRAINING & EXPERIMENTATION
+
+Training a language model involves more than simply executing a training script.
+
+It requires understanding the interaction between data, model architecture, optimization, and evaluation.
+
+The project's experimental direction includes:
+
+Dataset Engineering
+
+- Text preparation and preprocessing.
+- Dataset organization.
+- Training and validation separation.
+- Data quality and consistency.
+
+Model Development
+
+- Architecture experimentation.
+- Parameter configuration.
+- Model initialization.
+- Checkpoint management.
+
+Training
+
+- Optimization experiments.
+- Training-progress monitoring.
+- Loss evaluation.
+- Model-state preservation.
+
+Evaluation
+
+- Generated-text inspection.
+- Validation experiments.
+- Reproducibility.
+- Performance analysis.
+
+The exact implementation and supported options are determined by the project's source code.
+
+---
+
+💻 06. INSTALLATION & ENVIRONMENT
 
 Requirements
 
-The required environment depends on the actual implementation.
+The execution environment depends on the model implementation.
 
-Generally, a Python-based setup may require:
+A typical development environment may include:
 
-- Python.
-- Git.
-- The dependencies specified by the repository.
-- Sufficient system memory and storage.
-- The recommended model checkpoint.
+- Git
+- Python, when using the Python implementation
+- Project-specific dependencies
+- Sufficient RAM and storage
+- A compatible model checkpoint
 
-Repository setup
+Clone the project
 
 git clone https://github.com/omar-rashadooz/gamers_llm.git
 
 cd gamers_llm
 
+Prepare the checkpoint directory
+
 mkdir -p checkpoints/10m
 
-Dependency installation
+Install dependencies
 
-If a "requirements.txt" file exists:
+When the repository provides a "requirements.txt" file:
 
 python -m pip install -r requirements.txt
 
-Otherwise, install the dependencies specified by the project's configuration.
+Otherwise, follow the dependency configuration included in the repository.
 
-Running the model
+Model execution
 
-The training and inference commands depend on the scripts and interfaces implemented in the repository.
+Once the environment and checkpoint are prepared, use the training or inference entry point provided by the implementation.
 
-Check the available scripts and their command-line arguments before running them.
-
----
-
-05. ◈ MODEL ENGINEERING
-
-Language models are more than parameter counts.
-
-Their behavior is influenced by multiple interconnected components:
-
-             INPUT TEXT
-                 |
-                 v
-          TOKEN PROCESSING
-                 |
-                 v
-          MODEL ARCHITECTURE
-                 |
-                 v
-          TRAINED PARAMETERS
-                 |
-                 v
-          CHECKPOINT LOADING
-                 |
-                 v
-          TEXT GENERATION
-                 |
-                 v
-              OUTPUT
-
-This diagram illustrates a general language-model workflow, not a verified implementation diagram.
-
-Core engineering concepts
-
-Component| Purpose
-Dataset| Provides training examples
-Tokenization| Converts text into model inputs
-Architecture| Defines the model's computational structure
-Parameters| Store learned numerical values
-Optimizer| Updates parameters during training
-Checkpoint| Preserves model state
-Inference| Uses trained parameters to generate output
+Consult the relevant source files for supported arguments, model-loading requirements, and execution instructions.
 
 ---
 
-06. ◈ PROJECT ORGANIZATION
+📁 07. PROJECT ORGANIZATION
 
-The following is an illustrative structure, not an assertion that all directories already exist.
+The checkpoint directory must follow the installation layout documented above.
+
+The following is a conceptual illustration, not a complete inventory of repository files:
 
 gamers_llm/
 │
 ├── checkpoints/
 │   └── 10m/
-│       └── <model-checkpoint>
+│       └── <downloaded-model-checkpoint>
 │
 ├── data/
-│   └── <training-data>
+│   └── <training-datasets>
 │
 ├── models/
 │   └── <model-implementation>
@@ -214,128 +258,113 @@ gamers_llm/
 │
 └── README.md
 
-Refer to the actual repository files for the authoritative project structure.
+Actual filenames and directories may differ according to the current implementation.
 
 ---
 
-07. ◈ EXPERIMENTAL PHILOSOPHY
+📊 08. MODEL EVALUATION
 
-The project follows an iterative engineering approach:
+A serious language-model project should be evaluated through measurable experiments.
 
-01 — Research
+Potential evaluation metrics include:
 
-Understand the architecture, data, and training objectives.
+Metric| What It Measures
+Training Loss| Training objective progress
+Validation Loss| Performance on held-out examples
+Perplexity| Language-model prediction quality, where applicable
+Parameter Count| Number of learned model parameters
+Inference Latency| Time required to generate output
+Memory Usage| Runtime memory consumption
+Generation Quality| Consistency and relevance of generated text
 
-02 — Build
-
-Implement the model and supporting infrastructure.
-
-03 — Train
-
-Experiment with training configurations and datasets.
-
-04 — Preserve
-
-Save model checkpoints for reproducibility and later evaluation.
-
-05 — Evaluate
-
-Inspect generated outputs and measure model behavior.
-
-06 — Improve
-
-Use experimental results to guide subsequent development.
+No unverified benchmark scores or performance guarantees are claimed in this README.
 
 ---
 
-08. ◈ PERFORMANCE & BENCHMARKS
+🛣️ 09. DEVELOPMENT ROADMAP
 
-Model performance should be evaluated using reproducible experiments rather than unsupported claims.
+The following roadmap describes possible areas of continued development.
 
-Useful evaluation metrics may include:
-
-- Training and validation loss.
-- Perplexity, where applicable.
-- Generation latency.
-- Memory consumption.
-- Parameter count.
-- Output consistency.
-
-No benchmark figures are published here without corresponding experimental evidence.
+- [ ] Continue architecture experimentation.
+- [ ] Improve training reproducibility.
+- [ ] Expand dataset preparation workflows.
+- [ ] Document checkpoint compatibility.
+- [ ] Improve model evaluation procedures.
+- [ ] Investigate gaming-oriented language applications.
+- [ ] Expand inference documentation.
+- [ ] Publish reproducible performance measurements.
 
 ---
 
-09. ◈ CONTRIBUTING
+🤝 10. CONTRIBUTING
 
-Contributions are welcome!
+Contributions are welcome.
 
-Whether you're interested in model engineering, training experiments, documentation, or code improvements, your contributions can help the project evolve.
+GAMERS LLM is an experimental engineering project, and improvements to its implementation, documentation, and evaluation can help its development.
 
-Contribution workflow
+How to contribute
 
-1. Fork this repository.
-2. Create a dedicated branch.
+1. Fork the repository.
+2. Create a new branch.
 3. Implement your changes.
-4. Test your modifications.
-5. Document relevant changes.
+4. Test your implementation.
+5. Document relevant modifications.
 6. Submit a pull request.
 
-Please include enough technical information for changes to be reviewed and reproduced.
+Areas of interest
+
+- Model architecture.
+- Training infrastructure.
+- Dataset engineering.
+- Checkpoint compatibility.
+- Inference improvements.
+- Documentation.
+- Reproducible experiments.
+
+Please provide enough technical information for contributions to be reviewed and reproduced.
 
 ---
 
-10. ◈ PROJECT ROADMAP
+⚠️ 11. LIMITATIONS & RESPONSIBLE USE
 
-The following is a proposed development roadmap, not a declaration of completed or committed features.
+GAMERS LLM is an experimental language-model project.
 
-- [ ] Continue model architecture experimentation.
-- [ ] Improve training reproducibility.
-- [ ] Document checkpoint compatibility.
-- [ ] Establish repeatable evaluation procedures.
-- [ ] Expand gaming-oriented experiments.
-- [ ] Improve inference documentation.
-- [ ] Publish reproducible benchmark results.
+Please keep the following considerations in mind:
 
----
-
-11. ◈ IMPORTANT DISCLAIMERS
-
-GAMERS LLM is an experimental project.
-
-- Generated responses are not guaranteed to be accurate.
-- Model quality depends on training data and configuration.
-- Checkpoint compatibility must be verified.
-- Hardware requirements vary according to implementation.
-- Experimental results should not be confused with independently verified benchmarks.
-
-Use downloaded model files responsibly and only from trusted sources.
+- Generated text may contain inaccurate information.
+- Output quality depends on training data and model configuration.
+- Model checkpoints must be compatible with their intended architecture.
+- Hardware requirements depend on the implementation.
+- Experimental results should not be interpreted as independent performance benchmarks.
+- Download model files only from sources you trust.
 
 ---
 
-12. ◈ LICENSE & USAGE
+📜 12. LICENSE
 
-Refer to the repository's "LICENSE" file for the applicable licensing terms.
+Refer to the repository's "LICENSE" file for the applicable usage and redistribution terms.
 
-The availability of source code does not automatically establish permission to redistribute model checkpoints, datasets, or third-party assets.
+The availability of source code does not automatically grant redistribution rights for third-party datasets, model weights, or external assets.
 
 ---
 
-13. ◈ AUTHOR
+👨‍💻 13. PROJECT AUTHOR
 
 <p align="center">
-  <strong>OMAR RASHAD</strong>
-  <br/>
-  Independent AI Developer & Project Creator
-  <br/><br/>
+  <img src="https://img.shields.io/badge/DEVELOPED%20BY-OMAR%20RASHAD-8A2BE2?style=for-the-badge" />
+</p><p align="center">
   <a href="https://github.com/omar-rashadooz">
-    <img src="https://img.shields.io/badge/GITHUB-omar--rashadooz-181717?style=for-the-badge&logo=github" />
+    <img src="https://img.shields.io/badge/GitHub-omar--rashadooz-181717?style=for-the-badge&logo=github" />
   </a>
-</p>---
+</p>GAMERS LLM is an independent development project focused on exploring language-model engineering and experimentation.
+
+---
 
 <p align="center">
-  <strong>GAMERS LLM</strong>
-  <br/>
-  <em>Build. Train. Experiment. Evolve.</em>
-  <br/><br/>
-  Made with dedication to Artificial Intelligence.
+  <img src="https://img.shields.io/badge/BUILT%20WITH-CURIOSITY-8A2BE2?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/POWERED%20BY-EXPERIMENTATION-0078D4?style=for-the-badge" />
+</p><h3 align="center">🎮 GAMERS LLM</h3><p align="center">
+  <strong>BUILD. TRAIN. EXPERIMENT. EVOLVE.</strong>
+  <br />
+  <em>Understanding intelligence, one experiment at a time.</em>
 </p>
