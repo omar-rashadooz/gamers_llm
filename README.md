@@ -60,6 +60,8 @@ These are project research directions; individual capabilities depend on the cur
   <img src="https://img.shields.io/badge/RECOMMENDED%20MODEL-CHECKPOINT-8A2BE2?style=for-the-badge" />
 </p>⭐ Start with the recommended checkpoint
 
+<img src="/tree.jpg" width="400" alt="Screenshot">
+
 The recommended model checkpoint is available through Google Drive.
 
 New users: download this compared file and uncompressed it before attempting to load the pretrained model.
